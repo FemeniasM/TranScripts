@@ -24,7 +24,7 @@ In addition, an rRNA database (e.g. obtained from [SILVA](https://www.arb-silva.
 For assebly_qc analysis is required salmon
 
 ### How to use:
-Clone this directory to your destination folder. Users must edit the config.file and set the paths to k-mer programs and arguments. Once the file has been edited with the appropriate arguments, just run the script as follow:
+Clone this directory to your destination folder. Users must edit the config.file and set the paths to programs and k-mer arguments. Once the file has been edited with the appropriate arguments, just run the script as follow:
 
 #### 1) clean_and_assemble script:
 
