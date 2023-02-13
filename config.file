@@ -1,0 +1,50 @@
+#!/bin/bash
+
+#Configure file
+#==============
+
+##  Program paths
+#---------------------
+# Put the paths corresponding to the programs:
+
+trimmomatic_dir=path/to/program
+rcorrector_dir=path/to/program
+TrAssTools=path/to/program
+
+rnaspades_dir=path/to/program/bin #bin directory
+transabyss_dir=path/to/program
+translig_dir=path/to/program
+
+# If run assembly_qc:
+salmon=path/to/program
+
+# Put the path to the adapters file:
+adapters=$trimmomatic_dir/adapters/TruSeq3-PE.fa
+
+# requires Bowtie2 in PATH enviroment. 
+# if Bowtie2 is not in PATH, uncomment the following line and add the corresponding program path.
+
+#export PATH=$HOME/path/to/bowtie2/bin:$PATH
+
+##  rRNA database
+#---------------------
+# If rRNAdb is a file, it checks the fasta format and indexes it before running Bowtie2,
+# otherwise, if is a directory, run bowtie2 directly with the rRNAdb index
+
+rRNAdb=path/to/index/rRNAdb 
+
+
+##  k-mer arguments
+#---------------------
+# The user can supply the set of k-mers to be used in the assemblies as continuous numbers comma-separated 
+# (e.g. kmerset=21,27,31,45,47...). Alternatively, the user can automate the set of kmers by defining the 
+# length of the reads (readsize=), the minimum k-mer (KMIN=) and the amount of k-mer to use (STEPS=). 
+# Comment/uncomment the lines appropriately, and set the following arguments:
+
+#kmerset=21,27,31,45,47
+
+#or:
+
+readsize=125
+KMIN=27
+STEPS=5
