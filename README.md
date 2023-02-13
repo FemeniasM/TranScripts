@@ -107,12 +107,12 @@ Usage:
 ${green}assembly_qc.sh${reset} ${yellow}[flags]${reset}
 
 Flags:
-  -f$ fasta files comma separated (without spaces)
-  -r$ library format ['pe']['se'] 
-  -l$ libaries folder with fastq files
-  -p$ numeric vector from 0 to 1 indicating proportion of readings to map (default 1:100%)
-  -t$ threads [N] (1 default)  
-  -o$ Output directory used in quant
+  -f fasta files comma separated (without spaces)
+  -r library format ['pe']['se'] 
+  -l libaries folder with fastq files
+  -p numeric vector from 0 to 1 indicating proportion of readings to map (default 1:100%)
+  -t threads [N] (1 default)  
+  -o Output directory used in quant
   -h  help
 ```
 
