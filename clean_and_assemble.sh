@@ -171,7 +171,7 @@ fi
 
 if [ -d $dir_libraries ]; then
 
-  nam_folder=$(find $dir_libraries/* -type d -printf "%f\n")
+  nam_folder=$(basename -a $dir_libraries/* ) 
   
   if [ -z "$run"  ]; then
   
